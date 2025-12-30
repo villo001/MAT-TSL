@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://fgy2l0xcml2i"]
+
+[ext_resource type="PackedScene" uid="uid://d2h6omo3q46kq" path="res://Scenes/Map.tscn" id="1_idj7w"]
+[ext_resource type="Script" uid="uid://c7qjv3gm62woq" path="res://Scripts/Main.gd" id="1_kln2b"]
+[ext_resource type="PackedScene" uid="uid://bag101x228hg2" path="res://Scenes/Player.tscn" id="1_r150o"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_kln2b")
+
+[node name="Map" parent="." instance=ExtResource("1_idj7w")]
+
+[node name="Player" parent="." instance=ExtResource("1_r150o")]
+position = Vector2(164, 82)
+
+[node name="SpawnedPickups" type="Node2D" parent="."]
