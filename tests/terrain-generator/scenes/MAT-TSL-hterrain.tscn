@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2lx7h8jq1ndn"]
+
+[ext_resource type="Script" uid="uid://bveoclxmvahtx" path="res://addons/zylann.hterrain/hterrain.gd" id="1_xjonu"]
+[ext_resource type="Resource" uid="uid://dgl03bms465es" path="res://data/terrain/mat-tsl/hterrain/data.hterrain" id="2_8igdp"]
+[ext_resource type="Script" uid="uid://c3c7426om7a5j" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="2_etho2"]
+
+[sub_resource type="Resource" id="Resource_8igdp"]
+script = ExtResource("2_etho2")
+mode = 0
+textures = [[], []]
+
+[node name="MatTslHterrain" type="Node3D"]
+visible = false
+script = ExtResource("1_xjonu")
+_terrain_data = ExtResource("2_8igdp")
+chunk_size = 32
+collision_enabled = true
+collision_layer = 1
+collision_mask = 1
+shader_type = "Classic4Lite"
+custom_shader = null
+custom_globalmap_shader = null
+texture_set = SubResource("Resource_8igdp")
+render_layers = 1
+cast_shadow = 1
+shader_params/u_ground_uv_scale = 20
+shader_params/u_depth_blending = true
+shader_params/u_triplanar = null
+shader_params/u_tile_reduction = null
+metadata/_custom_type_script = "uid://bveoclxmvahtx"

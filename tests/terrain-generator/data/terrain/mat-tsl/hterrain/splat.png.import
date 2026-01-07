@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dm05rc6kb0r6k"
+path="res://.godot/imported/splat.png-bc42e7e1fbc9fc07e552d67e3e2d463c.image"
+
+[deps]
+
+source_file="res://data/terrain/mat-tsl/hterrain/splat.png"
+dest_files=["res://.godot/imported/splat.png-bc42e7e1fbc9fc07e552d67e3e2d463c.image"]
+
+[params]
+
